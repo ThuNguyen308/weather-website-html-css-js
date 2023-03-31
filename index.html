@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div id="search-form">
+                <div class="search-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="search-input" type="search" autocomplete="off" placeholder="Search for cities"/>
+                    <div class="search-results">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- TODAY -->
+            <div class="today-weather">
+                <div class="top">
+                    <div>
+                        <h1 id="city"></h1>
+                        <p id="condition"></p>
+                        <p id="degree"></p>
+                    </div>
+                    <img id="icon" src=""/>
+                </div>
+                <div class="bottom">
+                    <div class="item">
+                        <p>
+                            <i class="fa-solid fa-cloud"></i>
+                            Cloud
+                        </p>
+                        <span id="cloud"></span>
+                    </div>
+                    <div class="item">
+                        <p>
+                            <i class="fa-solid fa-wind"></i>
+                            Wind
+                        </p>
+                        <span id="wind"></span>
+                    </div>
+
+
+                    <div class="item">
+                        <p>
+                            <i class="fa-sharp fa-regular fa-droplet-percent"></i>
+                           Humidity
+                        </p>
+                        <span id="humidity"></span>
+                    </div>
+                    <div class="item">
+                        <p>
+                            <i class="fa-regular fa-tire-pressure-warning"></i>
+                            Pressure
+                        </p>
+                        <span id="pressure"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- DAILY -->
+            <div class="daily-forecast">
+                <h3 class="title">DAILY FORECAST</h3>
+                <div id="daily-items"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
